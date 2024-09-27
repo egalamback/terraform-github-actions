@@ -8,8 +8,8 @@ terraform {
 
   # Update this block with the location of your terraform state file
   backend "azurerm" {
-    resource_group_name  = "${ vars.TFSTATE_RG }"
-    storage_account_name = "${ vars.TFSTATE_STORAGE_ACCOUNT }"
+    resource_group_name  = "var.resource_group_name"
+    storage_account_name = "var.storage_account_name"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
     use_oidc             = true
