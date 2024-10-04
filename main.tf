@@ -8,7 +8,7 @@ terraform {
 
   # Update this block with the location of your terraform state file
   backend "azurerm" {
-    resource_group_name  = "tf-testing"
+    resource_group_name  = "kat"
     storage_account_name = "erictftesting2" 
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
